@@ -1,10 +1,34 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Freeside Atlanta Availability and Interest Survey</title>
+    <title>Freeside Atlanta Responses for Interest and Availability Survey</title>
+    <meta charset="UTF-8">
+    <!-- important scripts that have to load before the content -->
+    <script type="text/javascript" src="static/lib/jquery-1.7.2.js"></script>
+    <link rel="stylesheet" href="statuc/lib/boostrap/css/bootstrap.css"/>
 </head>
 <body>
+    <div class="container">
+        <div class="span12">
+            <svg id="MainGraph"></svg>
+            <div class="row">
+                <div class="span6">
+                    <h6>Day Chart</h6>
+                    <svg id="DayChart"></svg>
+                </div>
+                <div class="span6">
+                    <h6>Time Chart</h6>
+                    <svg id="TimeChart"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <!-- scripts that can load after the content framework -->
+    <script type="text/javascript" src="static/lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="static/lib/underscore-1.3.3.js"></script>
+    <script type="text/javascript" src="static/lib/backbone-0.9.2.js"></script>
+    <script type="text/javascript" src="static/lib/d3-2.9.2.js"></script>
 </body>
 </html>
